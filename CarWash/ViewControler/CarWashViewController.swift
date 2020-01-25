@@ -12,24 +12,9 @@ class CarWashViewController: UIViewController {
     
     @IBOutlet weak var carWashTableView: UITableView!
     
-    @IBOutlet weak var InfoTableViewHeader: InfoTableViewHeader!
+   
     
-    var listBoxes = [Box(numberBox: 1,
-                         car: [Car(car: "Lada", timeWash: Time(hour: 12, min: 20)),
-                               Car(car: "Renault", timeWash: Time(hour: 12, min: 50)),
-                               Car(car: "Jaguar", timeWash: Time(hour: 16, min: 55)),
-                               Car(car: "Jaguar", timeWash: Time(hour: 16, min: 55))]),
-                     Box(numberBox: 2,
-                         car: [Car(car: "Lada", timeWash: Time(hour: 11, min: 34)),
-                               Car(car: "Tayota", timeWash: Time(hour: 12, min: 34)),
-                               Car(car: "Lada", timeWash: Time(hour: 12, min: 20))]),
-                    Box(numberBox: 3,
-                        car: [Car(car: "Lada", timeWash: Time(hour: 11, min: 34)),
-                              Car(car: "Tayota", timeWash: Time(hour: 12, min: 34)),
-                              Car(car: "Lada", timeWash: Time(hour: 12, min: 20))]),
-                    Box(numberBox: 4,
-                        car: [Car(car: "Lada", timeWash: Time(hour: 11, min: 34)),
-                              Car(car: "Tayota", timeWash: Time(hour: 12, min: 34))])]
+    var listBoxes = [Box]()
     
     var dictReview : [Int : Review] = .generate()
     let imageCarWash = UIImageView(image: UIImage(named: "CarWash"))
@@ -39,15 +24,17 @@ class CarWashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        generateBoxesInProject(boxCount: 10)
         carWashTableView.delegate = self
         carWashTableView.dataSource = self
         setupNibs()
-        let hederView = UIView()
-        hederView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
-        carWashTableView.tableHeaderView = hederView
+        let hederView = InfoTableViewHeader(frame: CGRect(x: 0, y: 30, width: view.frame.width, height: 400), title: "Мойка машин")
         
+        carWashTableView.tableHeaderView = hederView
+        carWashTableView.tableFooterView = UIView()
+        navigationItem.title = title
     }
+    
     func getCarInBox(index: Int) -> Array<Car>{
         var carsArrayInBox = [Car]()
         for elem in listBoxes {
@@ -57,6 +44,24 @@ class CarWashViewController: UIViewController {
         }
         return carsArrayInBox
         
+    }
+    
+    func generateBoxesInProject(boxCount: Int) {
+        for i in 0...boxCount {
+            let generatedBox = generateCar(numberBox: i)
+            listBoxes.append(generatedBox)
+        }
+    }
+    
+    func generateCar(numberBox: Int) -> Box {
+        let countCar = Int.random(in:0...10)
+        var carArrayRandom = [Car]()
+        for elem in 0...countCar {
+            let car = Car(car: "Машина \(elem)", timeWash: Time(hour: Int.random(in: 0...23), min: Int.random(in: 0...59)))
+            carArrayRandom.append(car)
+        }
+        
+        return Box(numberBox: numberBox, car: carArrayRandom)
     }
 
 }
@@ -72,7 +77,7 @@ extension CarWashViewController: UITableViewDelegate, UITableViewDataSource {
             case 0:
                 guard let viewControllerBoxes = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BoxesViewController") as? BoxesViewController else { return }
                 viewControllerBoxes.cars = getCarInBox(index: indexPath.row)
-                viewControllerBoxes.numberBox = indexPath.row + 1
+                viewControllerBoxes.numberBox = indexPath.row
                 self.navigationController?.pushViewController(viewControllerBoxes, animated: true)
     
             default:
