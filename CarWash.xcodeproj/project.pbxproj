@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F70A20ED23D4CCA00063064E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A20EC23D4CCA00063064E /* AppDelegate.swift */; };
+		F70A20EF23D4CCA00063064E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A20EE23D4CCA00063064E /* SceneDelegate.swift */; };
+		F70A20F123D4CCA00063064E /* CarWashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A20F023D4CCA00063064E /* CarWashViewController.swift */; };
+		F70A20F423D4CCA00063064E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70A20F223D4CCA00063064E /* Main.storyboard */; };
+		F70A20F623D4CCA30063064E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70A20F523D4CCA30063064E /* Assets.xcassets */; };
+		F70A20F923D4CCA30063064E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70A20F723D4CCA30063064E /* LaunchScreen.storyboard */; };
+		F70A210423D4CCA40063064E /* CarWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A210323D4CCA40063064E /* CarWashTests.swift */; };
+		F70A210F23D4CCA40063064E /* CarWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A210E23D4CCA40063064E /* CarWashUITests.swift */; };
+		F70A212023D4DC5A0063064E /* Boxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A211F23D4DC5A0063064E /* Boxes.swift */; };
+		F70A212223D4DD410063064E /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212123D4DD410063064E /* Human.swift */; };
+		F70A212423D4DE400063064E /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212323D4DE400063064E /* Reviews.swift */; };
+		F70A212623D4DEC10063064E /* DictReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212523D4DEC10063064E /* DictReviews.swift */; };
+		F70A212923D4E1250063064E /* BoxesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212723D4E1250063064E /* BoxesTableViewCell.swift */; };
+		F70A212A23D4E1250063064E /* BoxesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70A212823D4E1250063064E /* BoxesTableViewCell.xib */; };
+		F70A212F23D4E2290063064E /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212D23D4E2290063064E /* ReviewsTableViewCell.swift */; };
+		F70A213023D4E2290063064E /* ReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70A212E23D4E2290063064E /* ReviewsTableViewCell.xib */; };
+		F70A213723D4E7780063064E /* ConfigurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A213623D4E7780063064E /* ConfigurationCell.swift */; };
+		F70A21A423DB613A0063064E /* InfoTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A21A323DB613A0063064E /* InfoTableViewHeader.swift */; };
+		F70A21A723DC4F870063064E /* BoxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A21A623DC4F870063064E /* BoxesViewController.swift */; };
+		F70A21AA23DC72440063064E /* InBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A21A823DC72440063064E /* InBoxTableViewCell.swift */; };
+		F70A21AB23DC72440063064E /* InBoxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70A21A923DC72440063064E /* InBoxTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F70A210023D4CCA40063064E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F70A20E123D4CCA00063064E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F70A20E823D4CCA00063064E;
+			remoteInfo = CarWash;
+		};
+		F70A210B23D4CCA40063064E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F70A20E123D4CCA00063064E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F70A20E823D4CCA00063064E;
+			remoteInfo = CarWash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F70A20E923D4CCA00063064E /* CarWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70A20EC23D4CCA00063064E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F70A20EE23D4CCA00063064E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F70A20F023D4CCA00063064E /* CarWashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWashViewController.swift; sourceTree = "<group>"; };
+		F70A20F323D4CCA00063064E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F70A20F523D4CCA30063064E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F70A20F823D4CCA30063064E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F70A20FA23D4CCA30063064E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70A20FF23D4CCA40063064E /* CarWashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarWashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70A210323D4CCA40063064E /* CarWashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWashTests.swift; sourceTree = "<group>"; };
+		F70A210523D4CCA40063064E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70A210A23D4CCA40063064E /* CarWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70A210E23D4CCA40063064E /* CarWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWashUITests.swift; sourceTree = "<group>"; };
+		F70A211023D4CCA40063064E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70A211F23D4DC5A0063064E /* Boxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxes.swift; sourceTree = "<group>"; };
+		F70A212123D4DD410063064E /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		F70A212323D4DE400063064E /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		F70A212523D4DEC10063064E /* DictReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictReviews.swift; sourceTree = "<group>"; };
+		F70A212723D4E1250063064E /* BoxesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxesTableViewCell.swift; sourceTree = "<group>"; };
+		F70A212823D4E1250063064E /* BoxesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxesTableViewCell.xib; sourceTree = "<group>"; };
+		F70A212D23D4E2290063064E /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		F70A212E23D4E2290063064E /* ReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsTableViewCell.xib; sourceTree = "<group>"; };
+		F70A213623D4E7780063064E /* ConfigurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationCell.swift; sourceTree = "<group>"; };
+		F70A21A323DB613A0063064E /* InfoTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewHeader.swift; sourceTree = "<group>"; };
+		F70A21A623DC4F870063064E /* BoxesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxesViewController.swift; sourceTree = "<group>"; };
+		F70A21A823DC72440063064E /* InBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBoxTableViewCell.swift; sourceTree = "<group>"; };
+		F70A21A923DC72440063064E /* InBoxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InBoxTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F70A20E623D4CCA00063064E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70A20FC23D4CCA40063064E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70A210723D4CCA40063064E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F70A20E023D4CCA00063064E = {
+			isa = PBXGroup;
+			children = (
+				F70A20EB23D4CCA00063064E /* CarWash */,
+				F70A210223D4CCA40063064E /* CarWashTests */,
+				F70A210D23D4CCA40063064E /* CarWashUITests */,
+				F70A20EA23D4CCA00063064E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F70A20EA23D4CCA00063064E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F70A20E923D4CCA00063064E /* CarWash.app */,
+				F70A20FF23D4CCA40063064E /* CarWashTests.xctest */,
+				F70A210A23D4CCA40063064E /* CarWashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F70A20EB23D4CCA00063064E /* CarWash */ = {
+			isa = PBXGroup;
+			children = (
+				F70A21A523DC4EEA0063064E /* ViewControler */,
+				F70A21A223DB61020063064E /* Preview */,
+				F70A211E23D4DC060063064E /* Reviews */,
+				F70A211D23D4DBFB0063064E /* Boxes */,
+				F70A211C23D4DBE40063064E /* Cells */,
+				F70A20EC23D4CCA00063064E /* AppDelegate.swift */,
+				F70A20EE23D4CCA00063064E /* SceneDelegate.swift */,
+				F70A20F223D4CCA00063064E /* Main.storyboard */,
+				F70A20F523D4CCA30063064E /* Assets.xcassets */,
+				F70A20F723D4CCA30063064E /* LaunchScreen.storyboard */,
+				F70A20FA23D4CCA30063064E /* Info.plist */,
+			);
+			path = CarWash;
+			sourceTree = "<group>";
+		};
+		F70A210223D4CCA40063064E /* CarWashTests */ = {
+			isa = PBXGroup;
+			children = (
+				F70A210323D4CCA40063064E /* CarWashTests.swift */,
+				F70A210523D4CCA40063064E /* Info.plist */,
+			);
+			path = CarWashTests;
+			sourceTree = "<group>";
+		};
+		F70A210D23D4CCA40063064E /* CarWashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F70A210E23D4CCA40063064E /* CarWashUITests.swift */,
+				F70A211023D4CCA40063064E /* Info.plist */,
+			);
+			path = CarWashUITests;
+			sourceTree = "<group>";
+		};
+		F70A211C23D4DBE40063064E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F70A213523D4E7590063064E /* CellConfiguration */,
+				F70A212723D4E1250063064E /* BoxesTableViewCell.swift */,
+				F70A212823D4E1250063064E /* BoxesTableViewCell.xib */,
+				F70A212D23D4E2290063064E /* ReviewsTableViewCell.swift */,
+				F70A212E23D4E2290063064E /* ReviewsTableViewCell.xib */,
+				F70A21A823DC72440063064E /* InBoxTableViewCell.swift */,
+				F70A21A923DC72440063064E /* InBoxTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F70A211D23D4DBFB0063064E /* Boxes */ = {
+			isa = PBXGroup;
+			children = (
+				F70A211F23D4DC5A0063064E /* Boxes.swift */,
+			);
+			path = Boxes;
+			sourceTree = "<group>";
+		};
+		F70A211E23D4DC060063064E /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				F70A212123D4DD410063064E /* Human.swift */,
+				F70A212323D4DE400063064E /* Reviews.swift */,
+				F70A212523D4DEC10063064E /* DictReviews.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		F70A213523D4E7590063064E /* CellConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				F70A213623D4E7780063064E /* ConfigurationCell.swift */,
+			);
+			path = CellConfiguration;
+			sourceTree = "<group>";
+		};
+		F70A21A223DB61020063064E /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				F70A21A323DB613A0063064E /* InfoTableViewHeader.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		F70A21A523DC4EEA0063064E /* ViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				F70A20F023D4CCA00063064E /* CarWashViewController.swift */,
+				F70A21A623DC4F870063064E /* BoxesViewController.swift */,
+			);
+			path = ViewControler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F70A20E823D4CCA00063064E /* CarWash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70A211323D4CCA40063064E /* Build configuration list for PBXNativeTarget "CarWash" */;
+			buildPhases = (
+				F70A20E523D4CCA00063064E /* Sources */,
+				F70A20E623D4CCA00063064E /* Frameworks */,
+				F70A20E723D4CCA00063064E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarWash;
+			productName = CarWash;
+			productReference = F70A20E923D4CCA00063064E /* CarWash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F70A20FE23D4CCA40063064E /* CarWashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70A211623D4CCA40063064E /* Build configuration list for PBXNativeTarget "CarWashTests" */;
+			buildPhases = (
+				F70A20FB23D4CCA40063064E /* Sources */,
+				F70A20FC23D4CCA40063064E /* Frameworks */,
+				F70A20FD23D4CCA40063064E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F70A210123D4CCA40063064E /* PBXTargetDependency */,
+			);
+			name = CarWashTests;
+			productName = CarWashTests;
+			productReference = F70A20FF23D4CCA40063064E /* CarWashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F70A210923D4CCA40063064E /* CarWashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70A211923D4CCA40063064E /* Build configuration list for PBXNativeTarget "CarWashUITests" */;
+			buildPhases = (
+				F70A210623D4CCA40063064E /* Sources */,
+				F70A210723D4CCA40063064E /* Frameworks */,
+				F70A210823D4CCA40063064E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F70A210C23D4CCA40063064E /* PBXTargetDependency */,
+			);
+			name = CarWashUITests;
+			productName = CarWashUITests;
+			productReference = F70A210A23D4CCA40063064E /* CarWashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F70A20E123D4CCA00063064E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = alena;
+				TargetAttributes = {
+					F70A20E823D4CCA00063064E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F70A20FE23D4CCA40063064E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F70A20E823D4CCA00063064E;
+					};
+					F70A210923D4CCA40063064E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F70A20E823D4CCA00063064E;
+					};
+				};
+			};
+			buildConfigurationList = F70A20E423D4CCA00063064E /* Build configuration list for PBXProject "CarWash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F70A20E023D4CCA00063064E;
+			productRefGroup = F70A20EA23D4CCA00063064E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F70A20E823D4CCA00063064E /* CarWash */,
+				F70A20FE23D4CCA40063064E /* CarWashTests */,
+				F70A210923D4CCA40063064E /* CarWashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F70A20E723D4CCA00063064E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70A20F923D4CCA30063064E /* LaunchScreen.storyboard in Resources */,
+				F70A213023D4E2290063064E /* ReviewsTableViewCell.xib in Resources */,
+				F70A21AB23DC72440063064E /* InBoxTableViewCell.xib in Resources */,
+				F70A20F623D4CCA30063064E /* Assets.xcassets in Resources */,
+				F70A20F423D4CCA00063064E /* Main.storyboard in Resources */,
+				F70A212A23D4E1250063064E /* BoxesTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70A20FD23D4CCA40063064E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70A210823D4CCA40063064E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F70A20E523D4CCA00063064E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70A21A423DB613A0063064E /* InfoTableViewHeader.swift in Sources */,
+				F70A20F123D4CCA00063064E /* CarWashViewController.swift in Sources */,
+				F70A21A723DC4F870063064E /* BoxesViewController.swift in Sources */,
+				F70A212F23D4E2290063064E /* ReviewsTableViewCell.swift in Sources */,
+				F70A212623D4DEC10063064E /* DictReviews.swift in Sources */,
+				F70A20ED23D4CCA00063064E /* AppDelegate.swift in Sources */,
+				F70A212223D4DD410063064E /* Human.swift in Sources */,
+				F70A212423D4DE400063064E /* Reviews.swift in Sources */,
+				F70A20EF23D4CCA00063064E /* SceneDelegate.swift in Sources */,
+				F70A212023D4DC5A0063064E /* Boxes.swift in Sources */,
+				F70A213723D4E7780063064E /* ConfigurationCell.swift in Sources */,
+				F70A21AA23DC72440063064E /* InBoxTableViewCell.swift in Sources */,
+				F70A212923D4E1250063064E /* BoxesTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70A20FB23D4CCA40063064E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70A210423D4CCA40063064E /* CarWashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70A210623D4CCA40063064E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70A210F23D4CCA40063064E /* CarWashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F70A210123D4CCA40063064E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F70A20E823D4CCA00063064E /* CarWash */;
+			targetProxy = F70A210023D4CCA40063064E /* PBXContainerItemProxy */;
+		};
+		F70A210C23D4CCA40063064E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F70A20E823D4CCA00063064E /* CarWash */;
+			targetProxy = F70A210B23D4CCA40063064E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F70A20F223D4CCA00063064E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F70A20F323D4CCA00063064E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F70A20F723D4CCA30063064E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F70A20F823D4CCA30063064E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F70A211123D4CCA40063064E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F70A211223D4CCA40063064E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F70A211423D4CCA40063064E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
+				INFOPLIST_FILE = CarWash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = frg.CarWash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F70A211523D4CCA40063064E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
+				INFOPLIST_FILE = CarWash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = frg.CarWash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F70A211723D4CCA40063064E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
+				INFOPLIST_FILE = CarWashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = frg.CarWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarWash.app/CarWash";
+			};
+			name = Debug;
+		};
+		F70A211823D4CCA40063064E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
+				INFOPLIST_FILE = CarWashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = frg.CarWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarWash.app/CarWash";
+			};
+			name = Release;
+		};
+		F70A211A23D4CCA40063064E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
+				INFOPLIST_FILE = CarWashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = frg.CarWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarWash;
+			};
+			name = Debug;
+		};
+		F70A211B23D4CCA40063064E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYUF6SP3TV;
+				INFOPLIST_FILE = CarWashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = frg.CarWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarWash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F70A20E423D4CCA00063064E /* Build configuration list for PBXProject "CarWash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70A211123D4CCA40063064E /* Debug */,
+				F70A211223D4CCA40063064E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70A211323D4CCA40063064E /* Build configuration list for PBXNativeTarget "CarWash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70A211423D4CCA40063064E /* Debug */,
+				F70A211523D4CCA40063064E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70A211623D4CCA40063064E /* Build configuration list for PBXNativeTarget "CarWashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70A211723D4CCA40063064E /* Debug */,
+				F70A211823D4CCA40063064E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70A211923D4CCA40063064E /* Build configuration list for PBXNativeTarget "CarWashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70A211A23D4CCA40063064E /* Debug */,
+				F70A211B23D4CCA40063064E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F70A20E123D4CCA00063064E /* Project object */;
+}
