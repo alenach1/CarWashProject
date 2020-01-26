@@ -34,11 +34,11 @@ class Time {
 }
 
 class Car {
-    let car: String //carName
+    let carName: String //carName
     let timeWash: Time
     
-    init(car: String, timeWash: Time) {
-        self.car = car
+    init(carName: String, timeWash: Time) {
+        self.carName = carName
         self.timeWash = timeWash
     }
 }

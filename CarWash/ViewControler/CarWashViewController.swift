@@ -12,6 +12,7 @@ class CarWashViewController: UIViewController {
     
     @IBOutlet weak var carWashTableView: UITableView!
     
+    
     var listBoxes = [Box]()
     var dictReview : [Int : Review] = .generate() // массив
     let imageCarWash = UIImageView(image: UIImage(named: "CarWash"))
@@ -52,7 +53,7 @@ class CarWashViewController: UIViewController {
         let countCar = Int.random(in:0...10)
         var carArrayRandom = [Car]()
         for elem in 0...countCar {
-            let car = Car(car: "Машина \(elem)", timeWash: Time(hour: Int.random(in: 0...23), min: Int.random(in: 0...59)))
+            let car = Car(carName: "Машина \(elem)", timeWash: Time(hour: Int.random(in: 0...23), min: Int.random(in: 0...59)))
             carArrayRandom.append(car)
         }
         
