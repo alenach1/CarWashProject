@@ -18,9 +18,9 @@ class InBoxTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configure(car: String, timeCarWash:String) {
-        carLabel.text = car
-        timeCarWashLabel.text = timeCarWash
+    func configure(car: Car) {
+        carLabel.text = car.car
+        timeCarWashLabel.text = car.timeWash.timeText
      }
     
 }

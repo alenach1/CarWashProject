@@ -21,7 +21,7 @@ class BoxesViewController: UIViewController {
         boxesCarTableView.delegate = self
         boxesCarTableView.dataSource = self
         setupNibs() 
-        
+        boxesCarTableView.tableFooterView = UIView()
     }
 
 }
@@ -32,16 +32,14 @@ extension BoxesViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = boxesCarTableView.dequeueReusableCell(withIdentifier: ConfigurationCell.inBoxTableViewCell, for: indexPath) as! InBoxTableViewCell
-        cell.configure(car: cars[indexPath.row].car, timeCarWash: cars[indexPath.row].timeWash.timeText)
-                  return cell
+        cell.configure(car: cars[indexPath.row])
+        return cell
     }
- 
 }
 
 extension BoxesViewController {
-func setupNibs() {
-    
-    let nib = UINib(nibName: NibName.inBoxTableViewCell, bundle: nil)
-    boxesCarTableView.register(nib, forCellReuseIdentifier: ConfigurationCell.inBoxTableViewCell)
-}
+    func setupNibs() {
+        let nib = UINib(nibName: NibName.inBoxTableViewCell, bundle: nil)
+        boxesCarTableView.register(nib, forCellReuseIdentifier: ConfigurationCell.inBoxTableViewCell)
+    }
 }
