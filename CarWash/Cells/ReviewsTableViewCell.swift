@@ -18,7 +18,7 @@ class ReviewsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupLayout()
     }
 
     func configure(photo:UIImageView, nameHuman:String, review:String) {
@@ -26,5 +26,7 @@ class ReviewsTableViewCell: UITableViewCell {
         nameHumanLabel.text = nameHuman
         reviewTextView.text = review
     }
-    
+    fileprivate func setupLayout() {
+        self.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+    }
 }

@@ -92,7 +92,7 @@ extension CarWashViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return UITableView.automaticDimension
         case 1:
-            return 100
+            return 130
         default:
             return UITableView.automaticDimension
         }
