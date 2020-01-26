@@ -18,8 +18,8 @@ class InfoTableViewHeader: UIView {
     
     required init(frame: CGRect, title: String) {
         super.init(frame: frame)
-        setupNameCarWashLabel(text: title)
         setupImage(image: imageView)
+        setupNameCarWashLabel(text: title)
         seupGeneralReiting(generalRaiting: "Общий рейтинг")
         setupGeneralRaitingNumber(number: "\(generatRaiting.binade)")
         setupFreeOrBusy(freeOrBusy: "СВОБОДНО")
@@ -29,7 +29,7 @@ class InfoTableViewHeader: UIView {
     func setupNameCarWashLabel(text: String) {
         
         nameCarWashLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        nameCarWashLabel.frame = CGRect(x: 186, y: 20, width: UIScreen.main.bounds.width - 40, height: self.frame.height)
+        nameCarWashLabel.frame = CGRect(x: 20, y: 20, width: UIScreen.main.bounds.width - 40, height: self.frame.height)
         nameCarWashLabel.text = text
         nameCarWashLabel.textAlignment = .center
         
@@ -38,7 +38,7 @@ class InfoTableViewHeader: UIView {
     }
     
     func setupImage(image: UIImageView) {
-        imageView.frame = CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 50)
+        imageView.frame = CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: 150)
         imageView.contentMode = UIView.ContentMode.scaleAspectFill
         
         

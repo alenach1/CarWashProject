@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//вернуть массив ревью случайное со случайным текством
 extension Dictionary where Key == Int, Value == Review {
     static func generate() -> [Int: Review] {
         var output = [Int: Review]()

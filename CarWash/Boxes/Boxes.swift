@@ -18,6 +18,7 @@ class Box {
         
     }
 }
+// вывести время свойство типа Date в любом красивом формате с помощью DateForMatter
 
 class Time {
     let hour: Int
@@ -33,7 +34,7 @@ class Time {
 }
 
 class Car {
-    let car: String
+    let car: String //carName
     let timeWash: Time
     
     init(car: String, timeWash: Time) {

@@ -12,15 +12,10 @@ class CarWashViewController: UIViewController {
     
     @IBOutlet weak var carWashTableView: UITableView!
     
-   
-    
     var listBoxes = [Box]()
-    
-    var dictReview : [Int : Review] = .generate()
+    var dictReview : [Int : Review] = .generate() // массив
     let imageCarWash = UIImageView(image: UIImage(named: "CarWash"))
     let inageReviewers = UIImageView(image: UIImage(named: "HumanPhoto"))
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +67,34 @@ extension CarWashViewController: UITableViewDelegate, UITableViewDataSource {
         return 2
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           switch section {
+           case 0:
+               return listBoxes.count
+           case 1:
+               return dictReview.count
+           default:
+               return 0
+           }
+       }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.section {
+        case 0:
+        let cell = carWashTableView.dequeueReusableCell(withIdentifier: ConfigurationCell.boxesTableViewCell, for: indexPath) as! BoxesTableViewCell
+        cell.configure(numberBoxes: listBoxes[indexPath.row].numberBox, numberCar: listBoxes[indexPath.row].car.count)
+           return cell
+            
+       case 1:
+        let cell = carWashTableView.dequeueReusableCell(withIdentifier: ConfigurationCell.reviewsTableViewCell, for: indexPath) as! ReviewsTableViewCell
+        cell.configure(photo: inageReviewers, nameHuman: dictReview[indexPath.row]?.human.allName ?? "Имя", review: dictReview[indexPath.row]?.textReview ?? "Отзыв")
+           return cell
+            
+       default:
+        return UITableViewCell()
+       }
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             switch indexPath.section {
             case 0:
@@ -98,35 +121,7 @@ extension CarWashViewController: UITableViewDelegate, UITableViewDataSource {
         }
        
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return listBoxes.count
-        case 1:
-            return dictReview.count
-        default:
-            return 0
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
-        let cell = carWashTableView.dequeueReusableCell(withIdentifier: ConfigurationCell.boxesTableViewCell, for: indexPath) as! BoxesTableViewCell
-        cell.configure(numberBoxes: listBoxes[indexPath.row].numberBox, numberCar: listBoxes[indexPath.row].car.count)
-           return cell
-            
-       case 1:
-        let cell = carWashTableView.dequeueReusableCell(withIdentifier: ConfigurationCell.reviewsTableViewCell, for: indexPath) as! ReviewsTableViewCell
-        cell.configure(photo: inageReviewers, nameHuman: dictReview[indexPath.row]?.human.allName ?? "Имя", review: dictReview[indexPath.row]?.textReview ?? "Отзыв")
-           return cell
-            
-       default:
-        return UITableViewCell()
-       }
-    }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
