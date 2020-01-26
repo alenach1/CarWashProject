@@ -12,6 +12,7 @@ class CarWashViewController: UIViewController {
     
     @IBOutlet weak var carWashTableView: UITableView!
     
+    
     var listBoxes = [Box]()
     var dictReview : [Int : Review] = .generate() // массив
     let imageCarWash = UIImageView(image: UIImage(named: "CarWash"))
