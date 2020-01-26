@@ -19,7 +19,7 @@ class InBoxTableViewCell: UITableViewCell {
     }
 
     func configure(car: Car) {
-        carLabel.text = car.car
+        carLabel.text = car.carName
         timeCarWashLabel.text = car.timeWash.timeText
      }
     
