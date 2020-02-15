@@ -16,12 +16,11 @@ class InBoxTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
     }
 
     func configure(car: Car) {
         carLabel.text = car.carName
-        timeCarWashLabel.text = car.timeWash.timeText
+        timeCarWashLabel.text = car.timeWash
      }
     
 }

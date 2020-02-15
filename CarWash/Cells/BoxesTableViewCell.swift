@@ -22,18 +22,18 @@ class BoxesTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configure(numberBoxes: Int, numberCar: Int) {
+    func configure(boxes: Box) {
         var text = ""
-        if numberCar == 1 {
+        if boxes.car.count == 1 {
             text = "машина"
-        } else if numberCar == 2 || numberCar == 3 || numberCar == 4 {
+        } else if boxes.car.count == 2 || boxes.car.count == 3 || boxes.car.count == 4 {
             text = "машины"
         } else {
             text = "машин"
         }
            
-        numberBoxesLabel.text = String("\(numberBoxes) бокс")
-        numberCarLabel.text = String("\(numberCar) \(text)" )
+        numberBoxesLabel.text = String("\(boxes.numberBox) бокс")
+        numberCarLabel.text = String("\(boxes.car.count) \(text)" )
         
     }
     

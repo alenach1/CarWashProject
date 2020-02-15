@@ -14,6 +14,7 @@ class Human {
     var secondName: String
     var allName: String
     
+    
     init(firstName: String, secondName: String){
         self.firstName = firstName
         self.secondName = secondName

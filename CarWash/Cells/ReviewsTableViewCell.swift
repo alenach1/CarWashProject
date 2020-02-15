@@ -21,10 +21,10 @@ class ReviewsTableViewCell: UITableViewCell {
         setupLayout()
     }
 
-    func configure(photo:UIImageView, nameHuman:String, review:String) {
-        humanPhoto = photo
-        nameHumanLabel.text = nameHuman
-        reviewTextView.text = review
+    func configure(review: Review) {
+        humanPhoto = review.photoHuman
+        nameHumanLabel.text = review.human.allName
+        reviewTextView.text = review.textReview
     }
     fileprivate func setupLayout() {
         self.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)

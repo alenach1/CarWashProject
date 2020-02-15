@@ -28,10 +28,11 @@ class InfoTableViewHeader: UIView {
     }
     func setupNameCarWashLabel(text: String) {
         
-        nameCarWashLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        nameCarWashLabel.font = UIFont.boldSystemFont(ofSize: 40)
         nameCarWashLabel.frame = CGRect(x: 20, y: 20, width: UIScreen.main.bounds.width - 40, height: self.frame.height)
         nameCarWashLabel.text = text
         nameCarWashLabel.textAlignment = .center
+        nameCarWashLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         self.addSubview(nameCarWashLabel)
 

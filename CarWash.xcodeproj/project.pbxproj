@@ -18,7 +18,6 @@
 		F70A212023D4DC5A0063064E /* Boxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A211F23D4DC5A0063064E /* Boxes.swift */; };
 		F70A212223D4DD410063064E /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212123D4DD410063064E /* Human.swift */; };
 		F70A212423D4DE400063064E /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212323D4DE400063064E /* Reviews.swift */; };
-		F70A212623D4DEC10063064E /* DictReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212523D4DEC10063064E /* DictReviews.swift */; };
 		F70A212923D4E1250063064E /* BoxesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212723D4E1250063064E /* BoxesTableViewCell.swift */; };
 		F70A212A23D4E1250063064E /* BoxesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70A212823D4E1250063064E /* BoxesTableViewCell.xib */; };
 		F70A212F23D4E2290063064E /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A212D23D4E2290063064E /* ReviewsTableViewCell.swift */; };
@@ -28,6 +27,8 @@
 		F70A21A723DC4F870063064E /* BoxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A21A623DC4F870063064E /* BoxesViewController.swift */; };
 		F70A21AA23DC72440063064E /* InBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A21A823DC72440063064E /* InBoxTableViewCell.swift */; };
 		F70A21AB23DC72440063064E /* InBoxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70A21A923DC72440063064E /* InBoxTableViewCell.xib */; };
+		F7B3943023F3DCEE00981837 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B3942F23F3DCEE00981837 /* AddCarViewController.swift */; };
+		F7DB212623F050A700F67619 /* EditComentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB212523F050A700F67619 /* EditComentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,6 @@
 		F70A211F23D4DC5A0063064E /* Boxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxes.swift; sourceTree = "<group>"; };
 		F70A212123D4DD410063064E /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		F70A212323D4DE400063064E /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
-		F70A212523D4DEC10063064E /* DictReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictReviews.swift; sourceTree = "<group>"; };
 		F70A212723D4E1250063064E /* BoxesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxesTableViewCell.swift; sourceTree = "<group>"; };
 		F70A212823D4E1250063064E /* BoxesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxesTableViewCell.xib; sourceTree = "<group>"; };
 		F70A212D23D4E2290063064E /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		F70A21A623DC4F870063064E /* BoxesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxesViewController.swift; sourceTree = "<group>"; };
 		F70A21A823DC72440063064E /* InBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBoxTableViewCell.swift; sourceTree = "<group>"; };
 		F70A21A923DC72440063064E /* InBoxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InBoxTableViewCell.xib; sourceTree = "<group>"; };
+		F7B3942F23F3DCEE00981837 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		F7DB212523F050A700F67619 /* EditComentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditComentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +187,6 @@
 			children = (
 				F70A212123D4DD410063064E /* Human.swift */,
 				F70A212323D4DE400063064E /* Reviews.swift */,
-				F70A212523D4DEC10063064E /* DictReviews.swift */,
 			);
 			path = Reviews;
 			sourceTree = "<group>";
@@ -211,6 +212,8 @@
 			children = (
 				F70A20F023D4CCA00063064E /* CarWashViewController.swift */,
 				F70A21A623DC4F870063064E /* BoxesViewController.swift */,
+				F7DB212523F050A700F67619 /* EditComentViewController.swift */,
+				F7B3942F23F3DCEE00981837 /* AddCarViewController.swift */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -353,13 +356,14 @@
 				F70A20F123D4CCA00063064E /* CarWashViewController.swift in Sources */,
 				F70A21A723DC4F870063064E /* BoxesViewController.swift in Sources */,
 				F70A212F23D4E2290063064E /* ReviewsTableViewCell.swift in Sources */,
-				F70A212623D4DEC10063064E /* DictReviews.swift in Sources */,
 				F70A20ED23D4CCA00063064E /* AppDelegate.swift in Sources */,
 				F70A212223D4DD410063064E /* Human.swift in Sources */,
 				F70A212423D4DE400063064E /* Reviews.swift in Sources */,
+				F7B3943023F3DCEE00981837 /* AddCarViewController.swift in Sources */,
 				F70A20EF23D4CCA00063064E /* SceneDelegate.swift in Sources */,
 				F70A212023D4DC5A0063064E /* Boxes.swift in Sources */,
 				F70A213723D4E7780063064E /* ConfigurationCell.swift in Sources */,
+				F7DB212623F050A700F67619 /* EditComentViewController.swift in Sources */,
 				F70A21AA23DC72440063064E /* InBoxTableViewCell.swift in Sources */,
 				F70A212923D4E1250063064E /* BoxesTableViewCell.swift in Sources */,
 			);

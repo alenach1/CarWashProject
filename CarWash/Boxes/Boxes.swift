@@ -15,30 +15,18 @@ class Box {
     init(numberBox: Int, car: Array<Car>) {
         self.numberBox = numberBox
         self.car = car
-        
-    }
-}
-// вывести время свойство типа Date в любом красивом формате с помощью DateForMatter
-
-class Time {
-    let hour: Int
-    let min: Int
-    var timeText: String {
-        return "\(hour) ч.  \(min) мин. "
     }
     
-    init(hour: Int, min: Int) {
-        self.hour = hour
-        self.min = min
-    }
+    
 }
 
 class Car {
-    let carName: String //carName
-    let timeWash: Time
+    var carName: String 
+    var timeWash: String
     
-    init(carName: String, timeWash: Time) {
+    init(carName: String, timeWash: String) {
         self.carName = carName
         self.timeWash = timeWash
+        
     }
 }

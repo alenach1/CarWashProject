@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0C467D9C-C016-4F9F-9EAC-B62C400A3450"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarWash/ViewControler/CarWashViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "CarWashViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB - 9bf7ca0cbbb6e5e5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarWash.CarWashViewController.listReview.getter : Swift.Array&lt;CarWash.Review&gt;"
+                  moduleName = "CarWash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alena/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/CarWash/ViewControler/CarWashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB - 800056dd1f0d81d9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarWash.CarWashViewController.listReview.setter : Swift.Array&lt;CarWash.Review&gt;"
+                  moduleName = "CarWash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alena/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/CarWash/ViewControler/CarWashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB - 7e174561c257ace8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarWash.CarWashViewController.listReview.modify : Swift.Array&lt;CarWash.Review&gt;"
+                  moduleName = "CarWash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alena/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/CarWash/ViewControler/CarWashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB - 75c0729eb5b374b0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarWash.CarWashViewController.listReview.modify : Swift.Array&lt;CarWash.Review&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CarWash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alena/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/CarWash/ViewControler/CarWashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB - 651863a98c913e0f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarWash.CarWashViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CarWash.CarWashViewController"
+                  moduleName = "CarWash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alena/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/CarWash/ViewControler/CarWashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "394">
+               </Location>
+               <Location
+                  uuid = "9C3FDCAF-DE9F-433A-ADFA-88E415261FCB - a712413030ff2bcb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarWash.CarWashViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CarWash.CarWashViewController&gt;"
+                  moduleName = "CarWash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alena/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/CarWash/ViewControler/CarWashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
