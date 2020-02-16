@@ -22,7 +22,7 @@ class InfoTableViewHeader: UIView {
         setupNameCarWashLabel(text: title)
         seupGeneralReiting(generalRaiting: "Общий рейтинг")
         setupGeneralRaitingNumber(number: "\(generatRaiting.binade)")
-        setupFreeOrBusy(freeOrBusy: "СВОБОДНО")
+        setupFreeOrBusy()
         
         
     }
@@ -63,12 +63,19 @@ class InfoTableViewHeader: UIView {
         self.addSubview(generalRaitingNumberLabel)
         
     }
-    func setupFreeOrBusy(freeOrBusy: String) {
-        freeOrBusyLabel.font = UIFont.boldSystemFont(ofSize: 20)
+    func setupFreeOrBusy() {
+        freeOrBusyLabel.font = UIFont.boldSystemFont(ofSize: 35)
         freeOrBusyLabel.frame = CGRect(x: 30, y: 160, width: UIScreen.main.bounds.width - 40, height: self.frame.height)
-        freeOrBusyLabel.text = freeOrBusy
         freeOrBusyLabel.textAlignment = .center
-        freeOrBusyLabel.textColor = .green
+        
+        var countBoxesRandom = Int.random(in: 0...2)
+        if countBoxesRandom == 0 {
+            freeOrBusyLabel.text = "СВОБОДНО"
+            freeOrBusyLabel.textColor = .green
+        } else {
+            freeOrBusyLabel.text = "ЗАНЯТО"
+            freeOrBusyLabel.textColor = .red
+        }
         
         self.addSubview(freeOrBusyLabel)
     }

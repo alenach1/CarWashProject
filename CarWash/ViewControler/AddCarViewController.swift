@@ -74,11 +74,13 @@ class AddCarViewController: UIViewController {
         labelAddCar.text = "Введите название автомобиля"
         labelAddCar.font = .systemFont(ofSize: 15)
         labelAddCar.backgroundColor = .systemBackground
+        labelAddCar.textAlignment = .center
     }
     
     fileprivate func configureTextField() {
         textFieldAddCar.font = .systemFont(ofSize: 15)
         textFieldAddCar.placeholder = "Лада Ларгус 228"
+        textFieldAddCar.textAlignment = .center
         
     }
     

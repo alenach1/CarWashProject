@@ -106,5 +106,8 @@ extension EditComentViewController: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         reviewTextView.becomeFirstResponder()
     }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        reviewTextView.resignFirstResponder()
+    }
 }
 

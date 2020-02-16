@@ -49,12 +49,12 @@ class CarWashViewController: UIViewController {
     
     func generateRewiew() -> Array<Review> {
         let rewiewCount = Int.random(in:0...10)
-        var humanArr = [Human(firstName: "Igor", secondName: "Borisov"),
+        let humanArr = [Human(firstName: "Igor", secondName: "Borisov"),
                         Human(firstName: "Leonid", secondName: "Teplov"),
                         Human(firstName: "Anna", secondName: "Barsuk"),
                         Human(firstName: "Igor", secondName: "Litvinov")]
 
-        var textReviewArr = ["Очень круто","Сложно сказать, ни разу не был на этой мойке","Рекомендую друзьям и коллегам","Если бы мог сказать, но я не могу говорить","Отмыли меня и машину, спасибо Олегу Петровичу"]
+        let textReviewArr = ["Очень круто","Сложно сказать, ни разу не был на этой мойке","Рекомендую друзьям и коллегам","Если бы мог сказать, но я не могу говорить","Отмыли меня и машину, спасибо Олегу Петровичу"]
         
         for elem in 0...rewiewCount {
             let review = Review(human: humanArr[Int.random(in:0...(humanArr.count - 1))], textReview: textReviewArr[Int.random(in:0...(textReviewArr.count - 1))], photoHuman: imageReviewers)

@@ -17,35 +17,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLz-Gn-4EG">
-                        <rect key="frame" x="154.5" y="10" width="48" height="24"/>
+                        <rect key="frame" x="154.5" y="30" width="48" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HumanPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-GK-czt">
-                        <rect key="frame" x="0.0" y="20" width="130" height="130"/>
+                        <rect key="frame" x="20" y="20" width="130" height="130"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="kyX-GK-czt" secondAttribute="height" id="3A7-IT-HN3"/>
                             <constraint firstAttribute="width" secondItem="kyX-GK-czt" secondAttribute="height" multiplier="1:1" id="TdA-pr-LNL"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPk-2S-HBc">
-                        <rect key="frame" x="160" y="49" width="177" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPk-2S-HBc">
+                        <rect key="frame" x="170" y="74" width="147" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rPk-2S-HBc" firstAttribute="top" secondItem="YLz-Gn-4EG" secondAttribute="bottom" constant="15" id="Ihi-0b-Vag"/>
-                    <constraint firstItem="kyX-GK-czt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OHg-TZ-NT1"/>
-                    <constraint firstItem="YLz-Gn-4EG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Tlb-rH-Ag8"/>
-                    <constraint firstAttribute="bottom" secondItem="kyX-GK-czt" secondAttribute="bottom" constant="20" id="Ujf-Wq-52d"/>
-                    <constraint firstItem="kyX-GK-czt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fmj-e0-SaX"/>
-                    <constraint firstAttribute="trailing" secondItem="rPk-2S-HBc" secondAttribute="trailing" constant="20" id="mR1-Qp-da5"/>
-                    <constraint firstItem="kyX-GK-czt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="oh7-2F-uNh"/>
-                    <constraint firstItem="YLz-Gn-4EG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qVW-ZW-S4I"/>
-                    <constraint firstItem="rPk-2S-HBc" firstAttribute="leading" secondItem="kyX-GK-czt" secondAttribute="trailing" constant="30" id="uuD-Wk-hqt"/>
+                    <constraint firstItem="rPk-2S-HBc" firstAttribute="top" secondItem="YLz-Gn-4EG" secondAttribute="bottom" constant="20" id="9oW-FX-Qsp"/>
+                    <constraint firstItem="kyX-GK-czt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RV7-m5-OIp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rPk-2S-HBc" secondAttribute="trailing" constant="20" id="RZF-gj-7cI"/>
+                    <constraint firstItem="kyX-GK-czt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="eXU-68-7B9"/>
+                    <constraint firstItem="YLz-Gn-4EG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="kek-qW-xrx"/>
+                    <constraint firstItem="YLz-Gn-4EG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oEe-2t-edt"/>
+                    <constraint firstAttribute="bottom" secondItem="kyX-GK-czt" secondAttribute="bottom" constant="20" id="qIW-rT-Pjk"/>
+                    <constraint firstItem="rPk-2S-HBc" firstAttribute="leading" secondItem="kyX-GK-czt" secondAttribute="trailing" constant="20" id="yOW-WW-bky"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -12,7 +12,7 @@ enum Mode {
     case select
 }
 class BoxesViewController: UIViewController {
-    //peredavat suda model classa box, i menyat ego svoystvo cars, togda pri vizvrashenii na perviy ekran class izmenitsya
+   
     var box : Box?
     var numberBox = 0
     var selectArrCar = [Car]()
@@ -29,7 +29,7 @@ class BoxesViewController: UIViewController {
                 selectBarButton.title = "Select"
                 navigationItem.leftBarButtonItem = nil
                 boxesCarTableView.allowsMultipleSelection = false
-            
+                
             case .select:
                 selectBarButton.title = "Cancel"
                 navigationItem.leftBarButtonItem = deleteBarButton
@@ -56,7 +56,7 @@ class BoxesViewController: UIViewController {
     
     var dictionarySelect = [IndexPath : Bool]()
     
-
+    
     @IBOutlet weak var boxesCarTableView: UITableView!
     
     override func viewDidLoad() {
@@ -70,7 +70,7 @@ class BoxesViewController: UIViewController {
         setupNavigationsBar()
         
     }
-
+    
 }
 extension BoxesViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,13 +80,13 @@ extension BoxesViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = boxesCarTableView.dequeueReusableCell(withIdentifier: ConfigurationCell.inBoxTableViewCell, for: indexPath) as! InBoxTableViewCell
         cell.configure(car: (box?.car[indexPath.row])!)
+        cell.selectedBackgroundView = UIView()
         return cell
     }
     
     func tableView(_ tableView: UITableView,
                    editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-    
-        return UITableViewCell.EditingStyle.delete
+        return .none
     }
 }
 
@@ -112,6 +112,22 @@ extension BoxesViewController {
             dictionarySelect[indexPath] = false
         }
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            box?.car.remove(at: indexPath.row)
+            boxesCarTableView.deleteRows(at: [indexPath], with: .bottom)
+            boxesCarTableView.reloadData()
+        }
+    }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .default, title: "Delete") { (_, indexPath) in
+            self.box?.car.remove(at: indexPath.row)
+            self.boxesCarTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        return [deleteAction]
+    }
+    
 }
 
 extension BoxesViewController {
@@ -126,6 +142,9 @@ extension BoxesViewController {
         mMode = mMode == .view ? .select : .view
         boxesCarTableView.isEditing = true
         boxesCarTableView.allowsMultipleSelectionDuringEditing = true
+        if mMode == .view {
+        boxesCarTableView.setEditing(false, animated: true)
+        }
     }
     
     @objc func didDeleteButtonClicker(_ sender: UIBarButtonItem) {
@@ -146,12 +165,15 @@ extension BoxesViewController {
     
     func setupNavigationsBar() {
         navigationItem.rightBarButtonItems = [selectBarButton,addBarButton]
+       
 
     }
 }
 
 extension BoxesViewController : AddCarDelegate {
     func addCarViewControllerDidSave(car: Car) {
+        print(car)
+        box?.car.append(car)
         boxesCarTableView.reloadData()
     }
     
